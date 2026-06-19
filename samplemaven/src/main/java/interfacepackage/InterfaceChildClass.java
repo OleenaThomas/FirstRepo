@@ -6,12 +6,15 @@ public class InterfaceChildClass implements InterfaceParent1,InterfaceParent2{
 		System.out.println("show- child class instance method");
 		display();
 		print();
+		test2();
 	}
 	public static void main(String[] args) {
 		InterfaceChildClass obj=new InterfaceChildClass();
 		obj.show();
-		obj.display();
-		obj.print();
+		//obj.display();
+		//obj.print();
+		//obj.test2();
+		InterfaceParent1.test1(); //static methods are not inherited from interface
 	}
 
 	@Override
