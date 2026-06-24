@@ -8,6 +8,7 @@ import java.util.Set;
 public class ForEachClass {
 
 	public static void main(String[] args) {
+		int index=0;
 		// using array
 		int a[]= {10,20,30};
 		System.out.println("Iterating array");
@@ -53,6 +54,13 @@ public class ForEachClass {
 		System.out.println("Iterating non generic set");
 		for(Object k:s) {
 			System.out.println(k);
+			if(index==2) {
+				System.out.println("Index matched: " +k);
+			}
+			if(k.equals("car")) {
+				System.out.println("Element matched: "+k);
+			}
+			index++;
 		}
 		
 	}

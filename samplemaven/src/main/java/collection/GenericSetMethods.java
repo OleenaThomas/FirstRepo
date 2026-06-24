@@ -43,7 +43,6 @@ public class GenericSetMethods {
 		while(i.hasNext()) {
 			System.out.println(i.next());
 		}
-		
 		i.remove();
 		System.out.println(s);
 	}
