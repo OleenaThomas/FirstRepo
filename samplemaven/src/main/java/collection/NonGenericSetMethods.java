@@ -2,6 +2,7 @@ package collection;
 
 import java.util.HashSet;
 import java.util.Iterator;
+import java.util.LinkedHashSet;
 import java.util.Set;
 
 public class NonGenericSetMethods {
@@ -49,8 +50,20 @@ public class NonGenericSetMethods {
 		System.out.println(s);
 		
 		
+		LinkedHashSet lhs=new LinkedHashSet();
+		lhs.add("today");
+		lhs.add(67.9f);
+		lhs.add(8);
+		lhs.add("tomorrow");
+		System.out.println(lhs);
 		
-
+		lhs.addAll(t);
+		System.out.println(lhs);
+		
+		lhs.remove("today");
+		lhs.removeAll(t);
+		System.out.println(lhs);
+		
 	}
 
 }
